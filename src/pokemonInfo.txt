@@ -1,0 +1,2 @@
+Bulbasaur,70,Vine Whip,Grass,1 Diamond,1,Fire
+IvySaur,90,Bullet Seed,Grass,2 Diamond,2,Fire
