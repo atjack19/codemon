@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        Card name = new Card(2);
-
+        Card name = new Card("2 Diamond");
+        System.out.println(name.getPokedexLength());
 
         }
     }
