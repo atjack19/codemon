@@ -2,3 +2,4 @@ Bulbasaur,70,Grass,1 Diamond,1,Fire,Vine Whip
 Ivysaur,90,Grass,2 Diamond,2,Fire,Bullet Seed
 Venasaur,140,Grass,3 Diamond,3,Fire,Seed Bomb, Leech Seed
 Venasaur EX,190,Grass,4 Diamond,3,Fire,Seed Bomb, Giga Drain
+Charmander,60,Fire,1 Diamond,1,Water,Ember

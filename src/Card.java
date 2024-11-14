@@ -2,10 +2,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Card {
-    int pokedexLength;
+    String[] cardData;
     String name;
     int hp;
     String type;
@@ -41,8 +42,25 @@ public class Card {
 
     // new solution, make cards based on rarity
     public Card(String rarity) throws FileNotFoundException {
+        boolean cardFound = false;
+        Random rand = new Random();
+        // picking a random card
+        // Pick a random slot until desired rarity is found
+        while (!cardFound) {
+            int rarityCheck = rand.nextInt(getPokedexLength());
+            String checkCardRarity = Pokedex().get(rarityCheck)[3];
+            if (checkCardRarity.equals(rarity)) {
+                cardData = Pokedex().get(rarityCheck);
+                cardFound = true;
+            }
+        }
+        System.out.println(cardData[0]);
+        System.out.println(rarity);
+
+    }
+
+    public ArrayList<String[]> Pokedex() throws FileNotFoundException {
         Scanner myScanner = new Scanner(thePokedex);
-    // make an arraylist of the Pokédex
         ArrayList<String[]> pokedex = new ArrayList<>();
         int lineCounter = 0;
         while (lineCounter < getPokedexLength()) {
@@ -52,14 +70,8 @@ public class Card {
             pokedex.add(pokeInfo);
             lineCounter++;
         }
-        for (int i = 0; i < pokedex.size(); i++) {
-            System.out.println(pokedex.get(i)[0]);
-        }
-        System.out.println(rarity);
-
+        return pokedex;
     }
-
-
 
     public int getPokedexLength() throws FileNotFoundException {
         Scanner lineCounterr = new Scanner(thePokedex);
