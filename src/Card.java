@@ -17,29 +17,6 @@ public class Card {
     File thePokedex = new File("src\\pokemonInfo.txt");
 
 
-//    public Card(int pokedexNumber) throws FileNotFoundException {    old solution
-//        Scanner myScanner = new Scanner(thePokedex);
-//        int lineCounter = 1;
-//        while (lineCounter < pokedexNumber) {
-//            myScanner.nextLine();
-//            lineCounter++;
-//        }
-//        String desiredLine = myScanner.nextLine();
-//        String regex = ",";
-//        String[] pokeInfo = desiredLine.split(regex);
-//        name = pokeInfo[0];
-//        hp = Integer.parseInt(pokeInfo[1]);
-//        type = pokeInfo[2];
-//        rarity = pokeInfo[3];
-//        retreatCost = Integer.parseInt(pokeInfo[4]);
-//        weaknesses = pokeInfo[5];
-//        int counter = 6;
-//        while (pokeInfo.length > counter) {
-//            moves.add(pokeInfo[counter]);
-//            counter++;
-//        }
-//    }
-
     // new solution, make cards based on rarity
     public Card(String rarity) throws FileNotFoundException {
         boolean cardFound = false;

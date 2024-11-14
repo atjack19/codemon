@@ -1,0 +1,227 @@
+[
+  {
+    "Name": "Bulbasaur",
+    "HP": 70,
+    "Type": "Grass",
+    "Rarity": "1D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Vine Whip"]
+  },
+  {
+    "Name": "Ivysaur",
+    "HP": 90,
+    "Type": "Grass",
+    "Rarity": "2D",
+    "Retreat Cost": 2,
+    "Weakness": "Fire",
+    "Moves": ["Razor Leaf"]
+  },
+  {
+    "Name": "Venasaur",
+    "HP": 160,
+    "Type": "Grass",
+    "Rarity": "3D",
+    "Retreat Cost": 3,
+    "Weakness": "Fire",
+    "Moves": ["Mega Drain"]
+  },
+  {
+    "Name": "Venasaur EX",
+    "HP": 190,
+    "Type": "Grass",
+    "Rarity": "4D",
+    "Retreat Cost": 3,
+    "Weakness": "Fire",
+    "Moves": ["Razor Leaf", "Giant Bloom"]
+  },
+  {
+    "Name": "Caterpie",
+    "HP": 50,
+    "Type": "Grass",
+    "Rarity": "1D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Find a Friend"]
+  },
+  {
+    "Name": "Metapod",
+    "HP": 80,
+    "Type": "Grass",
+    "Rarity": "1D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Bug Bite"]
+  },
+  {
+    "Name": "Butterfree",
+    "HP": 120,
+    "Type": "Grass",
+    "Rarity": "3D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Powder Heal", "Gust"]
+  },
+  {
+    "Name": "Weedle",
+    "HP": 50,
+    "Type": "Grass",
+    "Rarity": "1D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Sting"]
+  },
+  {
+    "Name": "Kakuna",
+    "HP": 80,
+    "Type": "Grass",
+    "Rarity": "1D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Bug Bite"]
+  },
+  {
+    "Name": "Beedrill",
+    "HP": 120,
+    "Type": "Grass",
+    "Rarity": "3D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Sharp Sting"]
+  },
+  {
+    "Name": "Oddish",
+    "HP": 60,
+    "Type": "Grass",
+    "Rarity": "1D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Ram"]
+  },
+  {
+    "Name": "Gloom",
+    "HP": 80,
+    "Type": "Grass",
+    "Rarity": "2D",
+    "Retreat Cost": 2,
+    "Weakness": "Fire",
+    "Moves": ["Drool"]
+  },
+  {
+    "Name": "Vileplume",
+    "HP": 140,
+    "Type": "Grass",
+    "Rarity": "3D",
+    "Retreat Cost": 3,
+    "Weakness": "Fire",
+    "Moves": ["Soothing Scent"]
+  },
+  {
+    "Name": "Paras",
+    "HP": 70,
+    "Type": "Grass",
+    "Rarity": "1D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Scratch"]
+  },
+  {
+    "Name": "Parasect",
+    "HP": 120,
+    "Type": "Grass",
+    "Rarity": "2D",
+    "Retreat Cost": 2,
+    "Weakness": "Fire",
+    "Moves": ["Slash"]
+  },
+  {
+    "Name": "Venonat",
+    "HP": 60,
+    "Type": "Grass",
+    "Rarity": "1D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Tackle"]
+  },
+  {
+    "Name": "Venomoth",
+    "HP": 80,
+    "Type": "Grass",
+    "Rarity": "2D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Poison Powder"]
+  },
+  {
+    "Name": "Bellsprout",
+    "HP": 60,
+    "Type": "Grass",
+    "Rarity": "1D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Vine Whip"]
+  },
+  {
+    "Name": "Weepinbell",
+    "HP": 90,
+    "Type": "Grass",
+    "Rarity": "2D",
+    "Retreat Cost": 2,
+    "Weakness": "Fire",
+    "Moves": ["Razor Leaf"]
+  },
+  {
+    "Name": "Victreebel",
+    "HP": 140,
+    "Type": "Grass",
+    "Rarity": "3D",
+    "Retreat Cost": 2,
+    "Weakness": "Fire",
+    "Moves": ["Vine Whip"]
+  },
+  {
+    "Name": "Exeggcute",
+    "HP": 50,
+    "Type": "Grass",
+    "Rarity": "1D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Seed Bomb"]
+  },
+  {
+    "Name": "Exeggutor",
+    "HP": 130,
+    "Type": "Grass",
+    "Rarity": "3D",
+    "Retreat Cost": 3,
+    "Weakness": "Fire",
+    "Moves": ["Stomp"]
+  },
+  {
+    "Name": "Exeggutor EX",
+    "HP": 160,
+    "Type": "Grass",
+    "Rarity": "4D",
+    "Retreat Cost": 3,
+    "Weakness": "Fire",
+    "Moves": ["Tropical Swing"]
+  },
+  {
+    "Name": "Tangela",
+    "HP": 80,
+    "Type": "Grass",
+    "Rarity": "1D",
+    "Retreat Cost": 2,
+    "Weakness": "Fire",
+    "Moves": ["Absorb"]
+  },
+  {
+    "Name": "Scyther",
+    "HP": 70,
+    "Type": "Grass",
+    "Rarity": "1D",
+    "Retreat Cost": 1,
+    "Weakness": "Fire",
+    "Moves": ["Sharp Scythe"]
+  }
+]
