@@ -23,7 +23,7 @@ public class Card {
         // picking a random card
         // Pick a random slot until desired rarity is found
         while (!cardFound) {
-            int rarityCheck = rand.nextInt(getPokedexLength());
+            int rarityCheck = rand.nextInt(getPokedexLength()-1);
             String checkCardRarity = Pokedex().get(rarityCheck)[3];
             if (checkCardRarity.equals(rarity)) {
                 cardData = Pokedex().get(rarityCheck);
