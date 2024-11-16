@@ -223,5 +223,21 @@
     "Retreat Cost": 1,
     "Weakness": "Fire",
     "Moves": ["Sharp Scythe"]
+  },
+  {
+    "Name": "PlaceHolder - Full art",
+    "Rarity": "1S"
+  },
+  {
+    "Name": "PlaceHolder - Full art EX",
+    "Rarity": "2S"
+  },
+  {
+    "Name": "PlaceHolder - Cutscene Card",
+    "Rarity": "3S"
+  },
+  {
+    "Name": "PlaceHolder - Golden Card",
+    "Rarity": "Crown"
   }
 ]

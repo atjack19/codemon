@@ -1,14 +1,54 @@
-//import java.io.FileNotFoundException;
-//import java.util.ArrayList;
-//
-//public class Pack {
-//    Card name = new Card(1);
-//    ArrayList<Card> cards = new ArrayList<>();
-//    int counter = 0;
-//    while (counter < name.getPokedexLength()) {
-//
-//    }
-//    public Pack() throws FileNotFoundException {
-//
-//    }
-//}
+import org.json.simple.parser.ParseException;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Random;
+
+
+public class Pack {
+    ArrayList<CardJSON> pack = new ArrayList<>();
+    String[] rarities = {"1D","2D","3D","4D","1S","2S","3S","Crown"};
+    Random rand = new Random();
+    //3 cards are guaranteed to be 1D, then 4th and 5th cards have the special cards rate
+    //odds are listed from least to most
+    double[] rarityOdds4thCard = {0.000,90.000,5.000,1.666,2.572,0.500,0.222,0.040};
+    double[] rarityOdds5thCard = {0.000,60.000,20.000,6.664,10.288,2.000,0.888,0.160};
+
+    public Pack() throws IOException, ParseException {
+        pack.add(new CardJSON(rarities[0]));
+        pack.add(new CardJSON(rarities[0]));
+        pack.add(new CardJSON(rarities[0]));
+
+        // generate 4th card
+
+        double randomRarity = rand.nextDouble()*100;
+        int rarityIndex = 0;
+        double rarityScore = 0;
+        while (randomRarity > rarityScore) {
+            rarityIndex++;
+            rarityScore += rarityOdds4thCard[rarityIndex];
+        }
+        pack.add(new CardJSON(rarities[rarityIndex]));
+
+        // generate 5th card
+
+        randomRarity = rand.nextDouble()*100;
+        rarityIndex = 0;
+        rarityScore = 0;
+        while (randomRarity > rarityScore) {
+            rarityIndex++;
+            rarityScore += rarityOdds5thCard[rarityIndex];
+        }
+        pack.add(new CardJSON(rarities[rarityIndex]));
+
+        display();
+    }
+
+    public void display() {
+        for (CardJSON card : pack) {
+            card.simplePackDisplay();
+        }
+    }
+}

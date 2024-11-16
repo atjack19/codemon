@@ -44,9 +44,9 @@ public class CardJSON {
             retreatCost = (Long) pokemon.get("Retreat Cost");
             weakness = (String) pokemon.get("Weakness");
             moves = (ArrayList<String>) pokemon.get("Moves");
-            displayCard();
+
     }
-    public void displayCard() {
+    public void display() {
         System.out.println("Name: " + name);
         System.out.println("HP: " + hp);
         System.out.println("Type: " + type);
@@ -57,6 +57,13 @@ public class CardJSON {
         for (String move : moves) {
             System.out.println(move);
         }
+        System.out.println(" ");
+    }
+    public void simplePackDisplay() {
+        System.out.println("Name: " + name);
+        System.out.println("Type: " + type);
+        System.out.println("Rarity: " + rarity);
+        System.out.println(" ");
     }
 }
 
