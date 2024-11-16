@@ -9,7 +9,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException, ParseException {
         //Card name = new Card("4D");
-        CardJSON card = new CardJSON();
+        CardJSON card = new CardJSON("4D");
 
         }
     }

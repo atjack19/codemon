@@ -2,7 +2,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.random.RandomGenerator;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -18,40 +17,46 @@ public class CardJSON {
     Long retreatCost;
     String weakness;
     ArrayList<String> moves;
-    String filePath = "src\\pokedex.json";
+    String filePath = "src/pokedex.json";
 
 
-    public CardJSON() throws IOException, ParseException {
+    public CardJSON(String rarity) throws IOException, ParseException {
         JSONParser parser = new JSONParser();
-        JSONArray pokedex = (JSONArray) parser.parse(new FileReader("src/pokedex.json")); //this is one slash bc I was working on macOS its two backslashes on win
-        Random pokeIndex = new Random();
-        int randPokemon = pokeIndex.nextInt(pokedex.toArray().length);
+        JSONArray pokedex = (JSONArray) parser.parse(new FileReader(filePath)); //this is one slash bc I was working on macOS its two backslashes on win
+        Random pokeIndex = new Random();                                        //It works like this on windows too, so i guess its fine like this
+        
+        int randPokemon = 0;
+        boolean correctRarity = false;
+        while (!correctRarity) {
+            randPokemon = pokeIndex.nextInt(pokedex.toArray().length);
+            JSONObject pokemon = (JSONObject) pokedex.toArray()[randPokemon];
+            if (pokemon.get("Rarity").toString().equals(rarity)) {
+                correctRarity = true;
+            }
+        }
+
             JSONObject pokemon = (JSONObject) pokedex.toArray()[randPokemon];
 
             name = (String) pokemon.get("Name");
-            System.out.println(name);
-
             hp = (Long) pokemon.get("HP");
-            System.out.println(hp);
-
             type = (String) pokemon.get("Type");
-            System.out.println(type);
-
-            rarity = (String) pokemon.get("Rarity");
-            System.out.println(rarity);
-
+            this.rarity = (String) pokemon.get("Rarity");
             retreatCost = (Long) pokemon.get("Retreat Cost");
-            System.out.println(retreatCost);
-
             weakness = (String) pokemon.get("Weakness");
-            System.out.println(weakness);
-
             moves = (ArrayList<String>) pokemon.get("Moves");
-
-            for (Object c : moves)
-            {
-                System.out.println(c+"");
-            }
+            displayCard();
+    }
+    public void displayCard() {
+        System.out.println("Name: " + name);
+        System.out.println("HP: " + hp);
+        System.out.println("Type: " + type);
+        System.out.println("Rarity: " + rarity);
+        System.out.println("Retreat Cost: " + retreatCost);
+        System.out.println("Weakness: " + weakness);
+        System.out.println("Move List");
+        for (String move : moves) {
+            System.out.println(move);
+        }
     }
 }
 
