@@ -225,6 +225,347 @@
     "Moves": ["Sharp Scythe"]
   },
   {
+    "Name": "Pinsir",
+    "Type": "Grass",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Cottonee",
+    "Type": "Grass",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Whimsicott",
+    "Type": "Grass",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Petilil",
+    "Type": "Grass",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Lilligant",
+    "Type": "Grass",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Skiddo",
+    "Type": "Grass",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Gogoat",
+    "Type": "Grass",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Charmander",
+    "Type": "Fire",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Charmeleon",
+    "Type": "Fire",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Charizard",
+    "Type": "Fire",
+    "Rarity": "3D"
+  },
+  {
+    "Name": "Charizard EX",
+    "Type": "Fire",
+    "Rarity": "4D"
+  },
+  {
+    "Name": "Vulpix",
+    "Type": "Fire",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Ninetales",
+    "Type": "Fire",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Growlithe",
+    "Type": "Fire",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Arcanine",
+    "Type": "Fire",
+    "Rarity": "3D"
+  },
+  {
+    "Name": "Arcanine EX",
+    "Type": "Fire",
+    "Rarity": "4D"
+  },
+  {
+    "Name": "Ponyta",
+    "Type": "Fire",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Rapidash",
+    "Type": "Fire",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Magmar",
+    "Type": "Fire",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Flareon",
+    "Type": "Fire",
+    "Rarity": "3D"
+  },
+  {
+    "Name": "Moltres",
+    "Type": "Fire",
+    "Rarity": "3D"
+  },
+  {
+    "Name": "Moltres EX",
+    "Type": "Fire",
+    "Rarity": "4D"
+  },
+  {
+    "Name": "Heatmor",
+    "Type": "Fire",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Salandit",
+    "Type": "Fire",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Salazzle",
+    "Type": "Fire",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Sizzlipede",
+    "Type": "Fire",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Centiskorch",
+    "Type": "Fire",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Squirtle",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Wartortle",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Blastoise",
+    "Type": "Water",
+    "Rarity": "3D"
+  },
+  {
+    "Name": "Blastoise EX",
+    "Type": "Water",
+    "Rarity": "4D"
+  },
+  {
+    "Name": "Psyduck",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Golduck",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Poliwag",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Poliwhirl",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Poliwrath",
+    "Type": "Water",
+    "Rarity": "3D"
+  },
+  {
+    "Name": "Tentacool",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Tentacruel",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Seel",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Dewgong",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Shellder",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Cloyster",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Krabby",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Kingler",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Horsea",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Seadra",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Goldeen",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Seaking",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Staryu",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Starmie",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Starmie EX",
+    "Type": "Water",
+    "Rarity": "4D"
+  },
+  {
+    "Name": "Magikarp",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Gyarados",
+    "Type": "Water",
+    "Rarity": "3D"
+  },
+  {
+    "Name": "Lapras",
+    "Type": "Water",
+    "Rarity": "3D"
+  },
+  {
+    "Name": "Vaporeon",
+    "Type": "Water",
+    "Rarity": "3D"
+  },
+  {
+    "Name": "Omanyte",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Omastar",
+    "Type": "Water",
+    "Rarity": "3D"
+  },
+  {
+    "Name": "Articuno",
+    "Type": "Water",
+    "Rarity": "3D"
+  },
+  {
+    "Name": "Articuno EX",
+    "Type": "Water",
+    "Rarity": "4D"
+  },
+  {
+    "Name": "Ducklett",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Swanna",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Froakie",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Frogadier",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Greninja",
+    "Type": "Water",
+    "Rarity": "3D"
+  },
+  {
+    "Name": "Pyukumuku",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Bruxish",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+  {
+    "Name": "Snom",
+    "Type": "Water",
+    "Rarity": "1D"
+  },
+  {
+    "Name": "Frosmoth",
+    "Type": "Water",
+    "Rarity": "2D"
+  },
+
+  {
     "Name": "PlaceHolder - Full art",
     "Rarity": "1S"
   },
