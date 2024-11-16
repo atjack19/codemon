@@ -1,1 +1,1 @@
-Basically gambling the game
+Basically gambling the game nintendo lawsuit incoming
