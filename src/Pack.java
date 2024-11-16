@@ -17,6 +17,7 @@ public class Pack {
     double[] rarityOdds5thCard = {0.000,60.000,20.000,6.664,10.288,2.000,0.888,0.160};
 
     public Pack() throws IOException, ParseException {
+        System.out.println("Pack Opening time!!!");
         pack.add(new CardJSON(rarities[0]));
         pack.add(new CardJSON(rarities[0]));
         pack.add(new CardJSON(rarities[0]));
@@ -42,7 +43,10 @@ public class Pack {
             rarityScore += rarityOdds5thCard[rarityIndex];
         }
         pack.add(new CardJSON(rarities[rarityIndex]));
-
+        for (CardJSON cardJSON : pack) {
+            cardJSON.saveCardAsJSON("collection");
+        }
+        addToCollection();
         display();
     }
 
@@ -51,4 +55,14 @@ public class Pack {
             card.simplePackDisplay();
         }
     }
+
+    public void addToCollection() throws IOException, ParseException {
+        for (CardJSON cardJSON : pack) {
+            cardJSON.saveCardAsJSON("collection");
+        }
+    }
+
+
+
+
 }
