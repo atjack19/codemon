@@ -9,7 +9,6 @@ import org.json.simple.parser.ParseException;
 
 
 public class CardJSON {
-    String[] cardData;
     String name;
     Long hp;
     String type;
@@ -19,8 +18,8 @@ public class CardJSON {
     ArrayList<String> moves;
     String filePath = "src/pokedex.json";
     JSONParser parser = new JSONParser();
-    JSONArray pokedex = (JSONArray) parser.parse(new FileReader(filePath)); //this is one slash bc I was working on macOS its two backslashes on win
-                                                                            //It works like this on windows too, so i guess its fine like this
+    JSONArray pokedex = (JSONArray) parser.parse(new FileReader(filePath));
+
     public CardJSON(String rarity) throws IOException, ParseException {
 
         Random pokeIndex = new Random();
@@ -65,7 +64,7 @@ public class CardJSON {
         System.out.println(" ");
     }
     public void saveCardAsJSON(String fileName) throws IOException, ParseException {
-        boolean dupeFound = false;                                    // this whole "is file empty" thing is all kind of scuffed way of dealing with everything. Basically, if you try to parse an empty file, it shits itself. So, i make it so when it created a file for the fisrt time, it doesnt have to parse the file. That being said, if someone were to manually add an empty file with that name, we'd be fucked.
+        boolean dupeFound = false;                                    // this whole "is file empty" thing is all kind of scuffed way of dealing with everything. Basically, if you try to parse an empty file, it shits itself. So, I make it so when it created a file for the first time, it doesn't have to parse the file. That being said, if someone were to manually add an empty file with that name, we'd be fucked.
         JSONArray preexistingCollection = null;
         JSONArray collection = new JSONArray();                       // TL;DR, it works, but barely
         File f = new File("src/"+fileName+".json");            // Its also in the same format as the general Pokédex, so it can be read the same way
@@ -73,7 +72,6 @@ public class CardJSON {
         boolean emptyFile = false;
         if (f.createNewFile()) {                                      // checks if file exists, and sets flag to true
             emptyFile = true;
-        } else {
         }
         if (!emptyFile) {  // if the file exists
             preexistingCollection = (JSONArray) parser.parse(new FileReader("src/collection.json")); //open file for reading
