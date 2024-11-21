@@ -564,6 +564,11 @@
     "Type": "Water",
     "Rarity": "2D"
   },
+  {
+    "Name": "Pikachu",
+    "Type": "Electric",
+    "Rarity": "1D"
+  },
 
   {
     "Name": "PlaceHolder - Full art",
