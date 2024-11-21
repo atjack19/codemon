@@ -63,6 +63,9 @@ public class CardJSON {
         System.out.println("Rarity: " + rarity);
         System.out.println(" ");
     }
+    public String getRarity() {
+        return rarity;
+    }
     public void saveCardAsJSON(String fileName) throws IOException, ParseException {
         boolean dupeFound = false;                                    // this whole "is file empty" thing is all kind of scuffed way of dealing with everything. Basically, if you try to parse an empty file, it shits itself. So, I make it so when it created a file for the first time, it doesn't have to parse the file. That being said, if someone were to manually add an empty file with that name, we'd be fucked.
         JSONArray preexistingCollection = null;

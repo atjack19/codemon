@@ -49,7 +49,95 @@ public class Pack {
 
     public void display() {
         for (CardJSON card : pack) {
-            card.simplePackDisplay();
+            if (card.getRarity().equals("1D")) {
+                delay(1000);
+                card.simplePackDisplay();
+            }
+            else if (card.getRarity().equals("2D")) {
+                delay(1000);
+                System.out.println("...");
+                delay(1000);
+                card.simplePackDisplay();
+            }
+            else if (card.getRarity().equals("3D")) {
+                delay(1000);
+                System.out.println("...");
+                delay(1000);
+                System.out.println("..?");
+                delay(2000);
+                card.simplePackDisplay();
+            }
+            else if (card.getRarity().equals("4D")) {
+                delay(1000);
+                System.out.println("...");
+                delay(1000);
+                System.out.println("..?");
+                delay(2000);
+                System.out.println("..!");
+                delay(2000);
+                card.simplePackDisplay();
+            }
+            else if (card.getRarity().equals("1S")) {
+                delay(1000);
+                System.out.println("...");
+                delay(1000);
+                System.out.println("..?");
+                delay(2000);
+                System.out.println("..!");
+                delay(2000);
+                System.out.println(".?!");
+                delay(2000);
+                card.simplePackDisplay();
+            }
+            else if (card.getRarity().equals("2S")) {
+                delay(1000);
+                System.out.println("...");
+                delay(1000);
+                System.out.println("..?");
+                delay(2000);
+                System.out.println("..!");
+                delay(2000);
+                System.out.println(".?!");
+                delay(2000);
+                System.out.println(".!!");
+                delay(3000);
+                card.simplePackDisplay();
+            }
+            else if (card.getRarity().equals("3S")) {
+                delay(1000);
+                System.out.println("...");
+                delay(1000);
+                System.out.println("..?");
+                delay(2000);
+                System.out.println("..!");
+                delay(2000);
+                System.out.println(".?!");
+                delay(2000);
+                System.out.println(".!!");
+                delay(3000);
+                System.out.println("?!!");
+                delay(3000);
+                card.simplePackDisplay();
+
+            }
+            else if (card.getRarity().equals("Crown")) {
+                delay(1000);
+                System.out.println("...");
+                delay(1000);
+                System.out.println("..?");
+                delay(2000);
+                System.out.println("..!");
+                delay(2000);
+                System.out.println(".?!");
+                delay(2000);
+                System.out.println(".!!");
+                delay(3000);
+                System.out.println("?!!");
+                delay(3000);
+                System.out.println("!!!");
+                delay(3000);
+                card.simplePackDisplay();
+            }
         }
     }
 
@@ -57,6 +145,10 @@ public class Pack {
         for (CardJSON cardJSON : pack) {
             cardJSON.saveCardAsJSON("collection");
         }
+    }
+    public void delay(int ms) {
+        long start = System.currentTimeMillis();
+        while(start >= System.currentTimeMillis() - ms);
     }
 
 
